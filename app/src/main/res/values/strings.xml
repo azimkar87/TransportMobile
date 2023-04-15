@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Dolon</string>
+    <string name="title_activity_navigation_drawer">Trackings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Send</string>
+    <string name="action_resend">Resend</string>
+
+    <string name="menu_trackings">Trackings</string>
+    <string name="menu_report">Report</string>
+    <string name="menu_delivery">Delivery</string>
+    <string name="menu_upgrade">Upgrade</string>
+    <string name="popup_recycler_edit">Edit</string>
+    <string name="popup_recycler_delete">Delete</string>
+    <string name="popup_delivery_edit">Изменить</string>
+    <string name="popup_delivery_set_delivery">Доставлено</string>
+    <string name="popup_delivery_add_image">Добавить фото</string>
+    <string-array name="cargo_codes">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+        <item>Javascript</item>
+        <item>Jquery</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="delivery_fragment">Delivery fragment</string>
+    <string name="report_fragment">Report fragment</string>
+
+    <string name="main_site">"https://dlc312.ru/"</string>
+    <string name="main_site2">"https://1326-77-235-27-71.ngrok.io/"</string>
+</resources>

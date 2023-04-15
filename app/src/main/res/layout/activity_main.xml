@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/scanReadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan Barcode"
+        app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/custom_barcode_card">
+
+        <EditText
+            android:id="@+id/barcodeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Barcode"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/editTextWeight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Weight"
+            android:background="@android:color/transparent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+
+            >
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cargo name:"
+                android:textSize="17dp"
+                />
+            <RadioButton
+                android:id="@+id/radio_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:checked="true"
+                android:text="F"
+                android:textSize="20dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/radio_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:text="X"
+                android:textSize="20dp"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewCargoCode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Cargo code"
+
+            app:mask="***-###"
+            android:background="@android:color/transparent"
+             />
+        <ImageView
+            android:id="@+id/barcodeViewer"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_weight="1"
+        android:text="Back" />
+    <Button
+        android:id="@+id/addToListButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_weight="1"
+        android:text="Next" />
+</LinearLayout>
+</LinearLayout>

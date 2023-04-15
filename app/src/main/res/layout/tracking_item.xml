@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardElevation="5dp"
+        app:contentPadding="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100">
+                <TextView
+                    android:id="@+id/textViewTrackingCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Barcode"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_weight="90"
+                    android:textAlignment="center"/>
+                <ImageButton
+                    android:id="@+id/popupMenuDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_more_vert_24"
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewBarcode"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/barcode"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="75"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                >
+
+
+            <TextView
+                android:id="@+id/textViewWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Weight" />
+            <TextView
+                android:id="@+id/textViewCreatedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CreatedDate" />
+            <TextView
+                android:id="@+id/textViewForeignName"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="ForeignName" />
+            <TextView
+                    android:id="@+id/textViewCargoCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="CargoCode" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:gravity="right"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/imageViewIsSended"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/accept_green"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

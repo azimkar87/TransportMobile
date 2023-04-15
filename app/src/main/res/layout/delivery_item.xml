@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:cardElevation="5dp"
+        app:contentPadding="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100">
+                <TextView
+                    android:id="@+id/textViewAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Адрес"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_weight="90"
+                    android:textAlignment="center"/>
+
+                <ImageButton
+                    android:id="@+id/popupMenuDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_more_vert_24"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="75"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp"
+                            >
+                        <TextView
+                            android:id="@+id/textViewLabelPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:inputType="phone"
+                            android:text="Телефон" />
+                        <TextView
+                                android:id="@+id/textViewPhone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoLink="phone"
+                                android:layout_weight="50"
+                        android:text="Телефон" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp">
+                        <TextView
+                            android:id="@+id/textViewLabelReceiver"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:text="Получатель" />
+                        <TextView
+                                android:id="@+id/textViewReceiver"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:text="Получатель" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp">
+                        <TextView
+                            android:id="@+id/textViewLabelCargo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Код груза" />
+                        <TextView
+                                android:id="@+id/textViewCargo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Код груза" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp">
+                        <TextView
+                            android:id="@+id/textViewLabelPlace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Место" />
+                        <TextView
+                                android:id="@+id/textViewPlace"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Место" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp">
+                        <TextView
+                            android:id="@+id/textViewLabelCreatedDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="date"
+                            android:layout_weight="1"
+                            android:text="Дата" />
+                        <TextView
+                                android:id="@+id/textViewCreatedDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="date"
+                                android:layout_weight="1"
+                                android:text="Дата" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="40"
+                                android:layout_margin="1dp">
+                                <CheckBox
+                                    android:id="@+id/checkBoxIsMainSumPaid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:enabled="false"
+                                    android:text="Сумма" />
+                                <TextView
+                                    android:id="@+id/textViewMainSum"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:textSize="23dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:text="0.00" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="40"
+                                android:layout_margin="1dp">
+                                <CheckBox
+                                    android:id="@+id/checkBoxIsServiceSumPaid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:enabled="false"
+                                    android:text="Доставка" />
+                                <TextView
+                                    android:id="@+id/textViewServiceSum"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:textSize="23dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:text="0.00" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="50"
+                                android:layout_margin="1dp">
+                                <ImageView
+                                    android:id="@+id/imageViewIsDelivered"
+                                    android:layout_width="30dp"
+                                    android:layout_height="48dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/accept_green"/>
+                                <TextView
+                                    android:id="@+id/textViewDeliveryManReceivedSum"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:textSize="23dp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:text="0.00" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textViewRegistratorNote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:gravity="start|top"
+                            android:hint="Комментарий регистратора"
+                            android:inputType="textMultiLine" />
+
+                        <TextView
+                            android:id="@+id/textViewDeliveryManNote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:gravity="start|top"
+                            android:hint="Комментарий доставщика"
+                            android:inputType="textMultiLine" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:orientation="vertical"
+                    >
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

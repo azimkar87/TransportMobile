@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Редактирование"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"
+            android:padding="10dp"
+            android:elevation="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/DeliveryManNoteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="295dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Примечание доставщика"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/DeliveryManReceivedSumEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Полученная сумма"
+            android:inputType="numberDecimal"
+            android:padding="15dp"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>

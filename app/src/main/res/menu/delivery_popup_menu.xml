@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/delivery_popup_edit"
+        android:title="@string/popup_delivery_edit" />
+    <item
+        android:id="@+id/delivery_popup_set_delivery"
+        android:title="@string/popup_delivery_set_delivery" />
+    <item
+        android:id="@+id/delivery_popup_add_image"
+        android:title="@string/popup_delivery_add_image" />
+</menu>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="90">
+
+            <EditText
+                android:id="@+id/editTextDateFilter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="##.##.####"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_calendar"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonShowCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="10"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="-6dp"
+
+            android:text="Filter"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="90">
+        <TextView
+            android:id="@+id/textViewTotalCount"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Total count:"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="40"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/textViewQuantity2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="40"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Send"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/textViewSendedQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="40"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="0"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:padding="4dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>
